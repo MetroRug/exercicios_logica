@@ -4,28 +4,24 @@ maior que o último. Resolva esse problema com um código que funcione em qualqu
 situação.
 '''
 
-'''inicial = int(input('Diga o valor inicial: '))
+inicial = int(input('Diga o valor inicial: '))
 final = int(input('Diga o valor final: '))
 incremento = int(input('Diga o incremento: '))
 
-n_incremento = -incremento
-
-print()
-print('Contagem:')
-
-if inicial<final:
-    
-    for valor in range(inicial, final, incremento*-1):
-
-        print(valor)
-
-    print('Acabou!')
-
-else:
+def conta_positivo():
     for valor in range(inicial, final, incremento):
         print(valor)
 
-    print('Acabou!')
-'''
+def conta_negativo():
+    for valor in range(inicial, final, -incremento):
+        print(valor)
 
-print ("abs(-45) : ", abs(45))
+print('Contagem: ')
+
+if inicial > final:
+    conta_negativo()
+
+else:
+    conta_positivo()
+
+print('Acabou!!')
