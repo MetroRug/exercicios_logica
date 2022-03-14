@@ -7,6 +7,6 @@ a = 6
 
 
 while a <= 11:
-    print(a)
+    print(f'{a} ', end="")
     a += 1
 print('Acabou!')

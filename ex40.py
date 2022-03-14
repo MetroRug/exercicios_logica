@@ -7,6 +7,6 @@ a = 0
 
 
 while a <= 18:
-    print(a)
+    print(f'{a} ', end="")
     a += 3
 print('Acabou!')

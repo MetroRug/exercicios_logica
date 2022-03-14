@@ -6,6 +6,6 @@
 a = 100
 
 while a >= 0:
-    print(a)
+    print(f'{a} ', end="")
     a -= 5
 print('Acabou!')

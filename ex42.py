@@ -8,6 +8,6 @@ a = 1
 b = int(input('Diga um número: '))
 
 while a <= b:
-    print(a)
+    print(f'{a} ', end="")
     a += 1
 print('Acabou!')

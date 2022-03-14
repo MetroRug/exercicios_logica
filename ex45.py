@@ -10,11 +10,11 @@ incremento = int(input('Diga o incremento: '))
 
 def conta_positivo():
     for valor in range(inicial, final, incremento):
-        print(valor)
+        print(f'{valor} ', end="")
 
 def conta_negativo():
     for valor in range(inicial, final, -incremento):
-        print(valor)
+        print(f'{valor} ', end="")
 
 print('Contagem: ')
 
@@ -24,4 +24,4 @@ if inicial > final:
 else:
     conta_positivo()
 
-print('Acabou!!')
+print('Acabou!')

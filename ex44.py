@@ -11,8 +11,8 @@ inicial = int(input('Diga o valor inicial: '))
 final = int(input('Diga o valor final: '))
 incremento = int(input('Diga o incremento: '))
 
-print('Contagem: ')
+print('Contagem: ' , end="")
 for valor in range(inicial, final, incremento):
-    print(valor)
+    print(f'{valor} ', end="")
 
-print('Acabou!!')
+print('Acabou!')

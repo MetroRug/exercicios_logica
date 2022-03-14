@@ -5,6 +5,6 @@
 a = 10
 
 while a >= 3:
-    print(a)
+    print(f'{a} ', end="")
     a -= 1
 print('Acabou!')
